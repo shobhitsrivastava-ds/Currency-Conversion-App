@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Options</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename="main.css")}}">
+</head>
+<body>
+	<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Currency Conversion App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/about">About</a>
+          <a class="nav-item nav-link" href="/form">Options</a>
+        </div>
+        <!-- Navbar Right Side -->
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+	<div class="container">
+	<form action = "http://localhost:5000/conversion" method = "post">
+    <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='cc.jpg') }}"/>
+       <br>
+       <h3>Available options ? :</h3>
+       <ul>
+         <li>USD</li>
+         <li>IDR</li>
+         <li>BGN</li>
+         <li>TSK</li>
+         <li>ILS</li>
+         <li>GBP</li>
+         <li>DKK</li>
+         <li>CAD</li>
+         <li>MXN</li>
+         <li>HUF</li>
+         <li>RON</li>
+         <li>MYR</li>
+         <li>SEK</li>
+         <li>SGD</li>
+         <li>HKD</li>
+         <li>AUD</li>
+         <li>CHF</li>
+         <li>KRW</li>
+         <li>CNY</li>
+         <li>TRY</li>
+         <li>HRK</li>
+         <li>THB</li>
+         <li>NOK</li>
+         <li>RUB</li>
+         <li>INR</li>
+         <li>JPY</li>
+         <li>CZK</li>
+         <li>BRL</li>
+         <li>PLN</li>
+         <li>PHP</li>
+         <li>ZAR</li>
+       </ul>
+       <br>
+       <p>Conversion choice !</p>
+       <p><input type="text" name="rate"/></p><br>
+       <p>Price :</p>
+       <p><input type="text" name="price"/></p>
+       <p><input type = "submit" value = "Find !" /></p>
+   </div>
+         
+    </form>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+</body>
+</html>
